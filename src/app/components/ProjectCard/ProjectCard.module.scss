@@ -1,0 +1,27 @@
+.card{
+  display: grid; gap: 10px; padding: 16px;
+  background: color-mix(in oklab, var(--bg), #ffffff 4%);
+  border: 1px solid color-mix(in oklab, var(--primary), transparent 80%);
+  border-radius: var(--radius);
+  transition: transform .15s ease, border-color .15s ease;
+
+  &:hover{
+    transform: translateY(-2px);
+    border-color: var(--primary);
+  }
+}
+.stack{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.stack li{
+  font: 500 12px/1.2 system-ui;
+  color: var(--muted);
+  border: 1px solid color-mix(in oklab, var(--muted), transparent 50%);
+  padding: 4px 8px;
+  border-radius: 999px;
+}

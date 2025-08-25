@@ -1,0 +1,34 @@
+/* Reset enxuto */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; }
+
+/* Fonte e cores base */
+:root {
+  --bg: #0b0c10;
+  --fg: #e6e6e6;
+  --primary: #7c5cff;
+  --muted: #a8a8b3;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* Utilitário padrão (igual “jeito que vem” mas com container) */
+.container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+  padding-block: clamp(16px, 2vw, 32px);
+}
