@@ -1,5 +1,5 @@
-import Hero from '@/app/components/Hero/Hero';
-import ProjectCard from '@/app/components/ProjectCard/ProjectCard';
+import Hero from '@/app/components/Hero';
+import ProjectCard from '@/app/components/ProjectCard';
 
 const featured = [
   { title: "ProjetoGazinCRUD", stack: ["PHP", "PDO", "MySQL", "JavaScript"], href: "https://github.com/Lucasmassaroto1/ProjetoGazinCRUD"},

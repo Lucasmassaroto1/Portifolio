@@ -1,4 +1,4 @@
-import ProjectCard from "@/app/components/ProjectCard/ProjectCard";
+import ProjectCard from "@/app/components/ProjectCard";
 
 export const metadata = {
   title: "Projetos — Lucas Massaroto",
