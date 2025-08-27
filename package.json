@@ -9,11 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "gsap": "^3.13.0",
-    "motion": "^12.23.12",
-    "next": "15.5.0",
+    "next": "15.5.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sass": "^1.91.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -21,8 +20,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.5.0",
-    "sass": "^1.90.0",
+    "eslint-config-next": "15.5.2",
     "typescript": "^5"
   }
 }
