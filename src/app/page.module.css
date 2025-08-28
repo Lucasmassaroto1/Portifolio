@@ -43,8 +43,6 @@
   display: flex;
   gap: 12px;
 }
-/* .ctas a.primary { composes: btn btn--primary from global; }
-.ctas a.secondary { composes: btn btn--ghost from global; } */
 
 @media(max-width: 600px){
   .page{
@@ -57,6 +55,15 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 

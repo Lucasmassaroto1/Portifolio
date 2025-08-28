@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BackgroundDarkVeil from "@/components/BackgroundDarkVeil";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
+        <BackgroundDarkVeil />
         <Header/>
         {children}
         <Footer/>
