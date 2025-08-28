@@ -20,7 +20,7 @@ export default function Home(){
         <Hero/>
         <section>
           <h2>Projetos em destaque</h2>
-          <div style={{ display: "grid", gap: 16, gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", marginTop: 16 }}>
+          <div className={styles.cards}>
           {projects.map((p) => <ProjetoCard key={p.title} {...p}/>)}
           </div>
         </section>

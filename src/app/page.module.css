@@ -1,4 +1,71 @@
-.page {
+.page{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100svh;
+  padding: 48px 0;
+}
+.main{
+  grid-row-start: 2;
+  display: grid;
+  gap: 40px;
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+}
+.main section{
+  display: grid;
+  gap: 16px;
+}
+.main h2{
+  margin: 0;
+  font-size: clamp(22px, 3vw, 28px);
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-shadow: 0 0 24px rgba(124,92,255,.35);
+  position: relative;
+}
+.main h2::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 64px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, var(--primary-300), transparent);
+  box-shadow: 0 0 18px rgba(124,92,255,.5);
+  border-radius: 2px;
+}
+.cards{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 12px;
+}
+.ctas{
+  display: flex;
+  gap: 12px;
+}
+/* .ctas a.primary { composes: btn btn--primary from global; }
+.ctas a.secondary { composes: btn btn--ghost from global; } */
+
+@media(max-width: 600px){
+  .page{
+    padding: 24px 0 64px;
+  }
+  .main{
+    gap: 32px;
+  }
+  .ctas{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -107,7 +174,6 @@ a.secondary {
   flex-shrink: 0;
 }
 
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
@@ -164,4 +230,4 @@ a.secondary {
   .logo {
     filter: invert();
   }
-}
+} */
