@@ -5,8 +5,8 @@ export default function Hero(){
     <section className={style.hero}>
       <div className={style.texts}>
         <h1>Lucas Massaroto</h1>
-        <p>Dev Full-stack, Curto React, Nextjs, Node e boas interfaces. Veja meus projetos e fale comigo.</p>
-        <div className={style.cta}>
+        <p>Desenvoledor Full-stack, em constante aprendizado.</p>
+        <div className={style.button}>
           <a href="/projetos" className={style.primary}>Ver Projetos</a>
           <a href="/contato" className={style.ghost}>Contato</a>
         </div>
